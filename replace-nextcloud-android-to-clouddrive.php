@@ -29,7 +29,6 @@ $flist=explode("\n",$flistx);
 
 for($e=0;$e<sizeof($flist);$e++)
 {
-#######if($flist[$e] !="" && $flist[$e]=="davdroid/app/src/main/res/values/strings.xml")
 if($flist[$e] !="")
 {
 print "\n $e --> ".$flist[$e];
@@ -50,10 +49,11 @@ $ssout=file_put_contents($flist[$e],$readdata);
 }
 
 
+print "Change Folder nd add icon manually";
 print "\n";
-$cmdx="mv davdroid/app/src/main/java/at/bitfire davdroid/app/src/main/java/at/deependhulla 2>/dev/null ; mv davdroid/app/src/main/java/at davdroid/app/src/main/java/com 2>/dev/null";
-`$cmdx`;
-$cmdx="cp -pRv opensync-icons/res/mipmap-* davdroid/app/src/main/res/ ; cp -pRv opensync-icons/web_hi_res_512.png davdroid/app/src/main/res/mipmap/ic_launcher.png ";
-`$cmdx`;
-print "\n";
+#$cmdx="mv davdroid/app/src/main/java/at/bitfire davdroid/app/src/main/java/at/deependhulla 2>/dev/null ; mv davdroid/app/src/main/java/at davdroid/app/src/main/java/com 2>/dev/null";
+#`$cmdx`;
+#$cmdx="cp -pRv opensync-icons/res/mipmap-* davdroid/app/src/main/res/ ; cp -pRv opensync-icons/web_hi_res_512.png davdroid/app/src/main/res/mipmap/ic_launcher.png ";
+#`$cmdx`;
+#print "\n";
 ?>
